@@ -1,0 +1,24 @@
+<section class="page-section" id="login">
+    <div class="container relative">
+        <div class="row">
+          <h2 class="section-title font-alt align-center mb-70 mb-sm-40">
+            Change your password
+          </h2>
+          <div class="col-sm-12 mb-40 login_box">
+             <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+                <%= devise_error_messages! %>
+                <%= f.hidden_field :reset_password_token %>
+              <div class="field mb-20 mb-md-10">
+                   <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+              <% end %>
+              <%= f.password_field :password, autofocus: true, autocomplete: "off",class:"input-md form-control form-devise", placeholder: "email"%>
+              </div>
+              <div class="actions align-center">
+                  <%= f.submit "Change My Password",class: "btn btn-mod btn-medium btn-round" %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+    </div>
+</section>

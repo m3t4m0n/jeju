@@ -1,0 +1,43 @@
+// Place all the styles related to the common controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.login_box{
+    width : 100%;
+    padding : 20px;
+    display :flex;
+    flex-direction : row;
+    justify-content : center;
+    
+}
+
+.knu{
+     color :#0071BE;
+}
+.alt-tabs-icon{
+    width : 128px;
+    height : 128px;
+}
+.cen{
+    display:flex;
+    justify-content:center
+}
+
+.service-box{
+    margin: 50px;
+    width: 200px;
+    height: auto;
+}
+.knu-logo{
+    width:50%;
+}
+.service_margin{
+    margin-top : 50px;
+}
+.nav_container{
+    height:75px;
+}
+.login_form{
+  width: 25%;
+  height: 25%;
+}
+

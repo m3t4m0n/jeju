@@ -1,0 +1,26 @@
+<section class="page-section" id="about">
+    <div class="container relative">
+          <div class="mb-10">
+          <a href="/poster/create" class="btn btn-mod btn-mod btn-large btn-round" style="float:right; top:-20;">load post</a>
+          <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+              POSTERS ABOUT..
+          </h2>
+        </div>
+        
+        <div class="row">
+            <!-- Team item -->
+            <% @result.css('div.contents ul img').each do |p|%>
+            <div class="col-sm-4 mb-xs-30 wow fadeInUp">
+                <div class="team-item">
+                    <div class="team-item-image">
+                        <%= image_tag("#{p['src']}") %>
+                    </div>
+                </div>
+            </div>
+            <!-- End Team item -->
+            <% end%>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+</div>

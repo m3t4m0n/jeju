@@ -1,0 +1,234 @@
+<!--첫 화면 페이지 입니다 -->
+<!-- Home Section -->
+
+<section class="home-section" id="home">
+    <div class="js-height-full">
+        <!-- Hero Content -->
+        <div class="home-content">
+            <div class="home-text">
+                
+                <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
+                    강남대학교의 여러 이벤트를 한번에!
+                </h1> 
+                
+                <h2 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                    <span class="text-rotate knu">
+                        KANGNAM NEWS
+                    </span>
+                </h2>
+            </div>
+        </div>
+        <!-- End Hero Content -->
+        
+        <!-- Scroll Down -->
+        <div class="local-scroll">
+            <a href="#services" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+        </div>
+        <!-- End Scroll Down -->
+        
+    </div>
+</section>
+<!-- Services Section -->
+<section class="page-section" id="services">
+    <div class="container relative ">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            학교 소식을 한눈에!
+        </h2>
+        
+        <!-- Nav tabs -->
+  
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <%=image_tag("016-camera.png") %>
+                    <h3>FAST!</h3>
+                    <p class="text-muted">최신소식을 </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <%=image_tag("018-screen.png") %>
+                    <h3>NEWS</h3>
+                    <p class="text-muted">정확하게</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <%=image_tag("019-spotlight-1.png") %>
+                    <h3>한눈에</h3>
+                    <p class="text-muted">뭐라하지...</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <%=image_tag("027-heavy-metal.png") %>
+                    <h3>신나게</h3>
+                    <p class="text-muted">공모좀..!</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Nav tabs -->
+        <!-- Scroll Down -->
+        <div class="local-scroll service_margin">
+            <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+        </div>
+        <!-- End Scroll Down -->
+    </div>
+</section>
+<!-- End Services Section -->
+
+<!-- About Section -->
+<section class="page-section" id="about">
+    <div class="container relative">
+        
+        <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+            About KNUNEWS
+        </h2>
+        
+        <div class="row">
+            
+            <!-- Team item -->
+            <% @poster_index.each do |p|%>
+            <div class="col-sm-4 mb-xs-30 wow fadeInUp">
+                <div class="team-item">
+                    <div class="team-item-image">
+                        <%= image_tag("#{p.image}") %>
+                        <div class="team-item-detail">
+                            <h4 class="font-alt normal"><%=p.host%></h4>
+                            
+                            <p>
+                                <%= p.intro %> 
+                            </p>
+                            
+                            <div class="team-social-links">
+                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="team-item-descr font-alt">
+                        
+                        <div class="team-item-name">
+                            <%=p.host %>
+                        </div>
+                        
+                        <div class="team-item-role">
+                            <%= p.place %>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Team item -->
+            <% end%>
+            
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+            
+<!-- Call Action Section -->
+<section class="page-section pt-0 pb-0 banner-section ">
+    <div class="container relative">
+        
+        <div class="row">
+            
+            <div class="col-sm-6">
+                
+                <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
+                    <div class="banner-content">
+                        <h3 class="font-alt">DEVELOPED BY ?</h3>
+                        <div class="banner-decription">
+                            
+                        </div>
+                        <div class="local-scroll"> KANGNAM UNIV LIKE LION 5TH 양효영,최다은,한수민</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-6 banner-image wow fadeInUp" data-wow-duration="1.2s">
+                    <%= image_tag("promo-1.png") %>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<!-- End Call Action Section -->
+   
+<!-- Coct Section -->
+<section class="page-section" id="contact">
+    <div class="container relative">
+        
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            사이트 문의 및 연락
+        </h2>
+        
+        <div class="row mb-60 mb-xs-40">
+            
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                    
+                    <!-- Phone -->
+                    <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="ci-title font-alt">
+                                facebook
+                            </div>
+                            <div class="ci-text">
+                                facebook.com/likelionKangnam
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Phone -->
+                    
+                    <!-- Address -->
+                    <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="ci-title font-alt">
+                                kakaotalk
+                            </div>
+                            <div class="ci-text">
+                                @멋쟁이사자처럼_강남대학교
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Address -->
+                    
+                    <!-- Email -->
+                    <div class="col-sm-6 col-lg-4 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="ci-title font-alt">
+                                Email
+                            </div>
+                            <div class="ci-text">
+                               kangnam@likelion.org
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Email -->
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>            
+            

@@ -1,0 +1,47 @@
+<div class="home-section" style="top:80px; text-align:center;">
+	<div class="home-section" style=" text-align:center;">
+		<div class="home-section" style="text-align:center;">
+			<div class="home-section" style=" text-align:center;">
+   				<section class="page-section" id="about">
+    				<div class="container relative">
+            			<div class="mb-10">
+          					<a href="/poster/create" class="btn btn-mod btn-mod btn-large btn-round" style="float:right; top:-20;">load post</a>
+          					<h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+              					POSTERS ABOUT..
+          					</h2>
+        				</div>
+        				<div class="row">
+        					
+			            <!-- Team item -->
+			            <% @every_post.each do |p|%>
+			            <a href="/poster/<%=p.id%>/detail">
+			            	<div class="col-sm-4 mb-xs-30 wow fadeInUp">
+			                	<div class="team-item">
+			                    	<div class="team-item-image">
+			                        	<img src="<%= p.image.url %>" /> 
+			                        	<div class="team-item-detail">
+			                            	<h4 class="font-alt normal"><%=p.host%></h4>
+			                        	</div>
+			                    	</div>
+			                    	<div class="team-item-descr font-alt">
+			                        	<div class="team-item-name">
+			                            	<%=p.host %>
+			                        	</div>
+			                        	<div class="team-item-role">
+			                            	<%= p.place %>
+			                        	</div>
+			                    	</div>
+			                    
+			                	</div>
+			            	</div>
+			            </a>
+			            <!-- End Team item -->
+			            <% end%>
+			        	</div>
+			    	</div>
+				</section>
+			<!-- End About Section -->
+			</div>
+		</div>
+	</div>
+</div>

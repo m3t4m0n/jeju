@@ -1,0 +1,33 @@
+<div class="nav_container">
+<!-- End Page Loader -->
+<!-- nav bar -->
+    <nav class="main-nav stick-fixed js-transparent small-height ">
+        <div class="full-wrapper relative clearfix ">
+            <!-- Logo ( * your text or image into link tag *) -->
+            <div class="nav-logo-wrap local-scroll">
+                <a href="/" class="logo small-height">
+                    <%= image_tag("logo.png") %>
+                </a>
+            </div>
+            <div class="mobile-nav small-height" style="height: 75px; line-height: 75px; width: 75px;">
+                <i class="fa fa-bars"></i>
+            </div>
+            <!-- Main Menu -->
+            <div class="inner-nav desktop-nav">
+                <ul class="clearlist scroll-nav local-scroll">
+                    <li class="active"><a href="/" style="height: 75px; line-height: 75px;" class="">Home</a></li>
+     
+                    <% if current_user%>
+                        <!--로그인 중이다. 로그아웃 창 떠야함 -->
+                        <li><a href="/poster/index" style="height: 75px; line-height: 75px;" class="">poster</a></li>
+                        <li><a href="/poster/best" style="height: 75px; line-height: 75px;" class="">best_poster</a></li>
+                        <li><a href="/users/sign_out" style="height: 75px; line-height: 75px;" class="">logouts</a></li>
+                    <% else %>
+                        <!--로그아웃 중이다. 로그인 창 떠야함 -->
+                        <li><a href="/users/sign_in" style="height: 75px; line-height: 75px;" class="">login</a></li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

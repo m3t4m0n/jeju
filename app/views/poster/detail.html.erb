@@ -1,0 +1,140 @@
+<!-- Head Section -->
+<section class="small-section bg-gray-lighter">
+    <div class="relative container align-left">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Poster Detail Page</h1>
+                <div class="hs-line-4 font-alt black">
+                    행사의 자세한 정보를 만나보세요 :) 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Head Section -->
+<!-- Section -->
+<section class="page-section">
+    <div class="container relative">
+        <!-- Product Content -->
+        <div class="row mb-60 mb-xs-30">
+            <!-- Product Images -->
+            <div class="col-md-4 mb-md-30">
+                <div class="post-prev-img">
+                    <a class="team-item-image">
+                        <%= image_tag("#{@poster.image}")%>
+                    </a>
+                </div>
+            </div>
+            <!-- End Product Images -->
+            <!-- Product Description -->
+            <div class="col-sm-8 col-md-5 mb-xs-40">
+                <h3 class="mt-0"><%=@poster.title%></h3>
+                <hr class="mt-0 mb-30"/>
+                <div class="section-text mb-30">
+                    <label>주최</label>
+                    <%=@poster.host %>
+                </div>
+                <hr class="mt-0 mb-30"/> 
+                <div class="section-text mb-30">
+                    <label>분류</label>
+                    <%=@category%>
+                </div>
+            
+                <hr class="mt-0 mb-30"/> 
+                <div class="section-text mb-30">
+                    <label>장소</label>
+                    <%=@poster.place%>
+                </div>
+                <hr class="mt-0 mb-30"/> 
+                <div class="section-text mb-30">
+                    <label>기간</label>
+                    <%=@poster.start_date.to_s[0..10]%>~<%=@poster.end_date.to_s[0..10]%>
+                </div>
+                <hr class="mt-0 mb-30"/> 
+                <div class="section-text mb-30">
+                    
+                    <i class="<%=@like_user%>" value="<%=@poster.id%>"></i>
+                    <p id="like_p"class="like_p" value="<%=@poster.id%>"><%=@like%></p>
+                </div>
+            </div>
+            <input type="hidden" id="post_like" value="<%=@poster.id%>"  class="heart">
+            <!-- End Product Description -->
+        </div>
+        <!-- End Product Content -->
+        
+        
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tpl-tabs animate">
+            <li class="active">
+                <a href="#detail" data-toggle="tab">상세내용</a>
+            </li>
+            <li>
+                <a href="#reply" data-toggle="tab">댓글</a>
+            </li>
+        </ul>
+        <!-- End Nav tabs -->
+        
+        <!-- Tab panes -->
+        <div class="tab-content tpl-tabs-cont">
+            <div class="tab-pane fade in active" id="detail">
+               <%= @poster.intro %>
+            </div>
+            <div class="tab-pane fade" id="reply">
+                
+                    <div class="mb-60 mb-xs-30">
+                        <ul class="media-list text comment-list clearlist">
+                            <!-- Comment Item -->
+                            <% @poster.replies.each do |c| %>
+                            <li class="media comment-item">
+                                <div class="media-body">
+                                    <div class="comment-item-data">
+                                        <div class="comment-author">
+                                            <a href="#"><%= User.find(c.user_id).email %></a>
+                                        </div>
+                                        <%=c.updated_at.to_s[0..10]%>
+                                    </div>
+                                    <p>
+                                        <%=c.content%>
+                                    </p>
+                                </div>
+                            </li>
+                            <% end %>
+                            <div id="reply_area">
+                                
+                            
+                            </div>
+                            <!-- End Comment Item -->
+                        </ul>
+                    </div>
+                    <!-- Add Review -->
+                <div>
+                    <h4 class="blog-page-title font-alt">Add Review</h4>
+                     <div class="row mb-20 mb-md-10">
+                            <div class="col-md-6 mb-md-10">
+                                <!-- Name -->
+                               <%=current_user.email%>
+                            </div>
+                    </div>
+                    <!-- Form -->
+                    <!-- Comment -->
+                    <div class="mb-30 mb-md-10">
+                        <textarea name="text" id="reply_content" class="input-md form-control" rows="3" placeholder="Comment" maxlength="400"></textarea>
+                    </div>
+                    <!-- Send Button -->
+                    <button type="submit" id ="reply_create" value="<%=current_user.id%>" class="btn btn-mod btn-medium btn-round">
+                            댓글 등록
+                    </button>
+                    <input type="hidden" id="user_email" value="<%=current_user.email%>">
+                    <!-- End Form -->
+                </div>
+                   <!-- End Add Review -->
+            </div>
+        </div>
+        <!-- End Tab panes -->
+    </div>
+</section>
+<!-- End Section -->
+<!-- Divider -->
+<hr class="mt-0 mb-0 "/>
+<!-- End Divider -->
+

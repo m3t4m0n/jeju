@@ -1,0 +1,33 @@
+<section class="page-section" id="login">
+    <div class="container relative">
+        <div class="row">
+          <h2 class="section-title font-alt align-center mb-70 mb-sm-40">
+            Sign UP
+          </h2>
+          <div class="col-sm-12 mb-40 login_box">
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name),class: "form new_user login_form") do |f| %>
+                <%= devise_error_messages! %>
+              <div class="field mb-20 mb-md-10">
+                <%= f.email_field :email, autofocus: true, class:"input-md form-control form-devise", placeholder: "email" %>
+              </div>
+              <div class="field mb-20 mb-md-10">
+                <% if @minimum_password_length %>
+                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+                  <% end %><br />
+                <%= f.password_field :password, autocomplete:"off",class:"input-md form-control form-devise",placeholder:"password" %>
+              </div>
+              <div class="field">
+                <%= f.password_field :password_confirmation, autocomplete: "off",class:"input-md form-control form-devise",placeholder:"password" %>
+              </div>
+              <div>
+                <br>
+              </div>
+              <div class="actions align-center">
+                <%= f.submit "Sign up",class: "btn btn-mod btn-medium btn-round"%>
+              </div>
+            <% end %>
+          </div>
+        </div>
+    </div>
+</section>
+
