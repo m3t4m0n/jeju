@@ -7208,3 +7208,552 @@ Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.
 =======
 >>>>>>> 9be9d886a68c526b53475a1df827ad5199128295
 >>>>>>> 7f94dbd3206c8ab29aecb7f4d01307c18209601e
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='taggings_idy' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='taggings_idy' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tagger_id_and_tagger_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tagger_id_and_tagger_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_context' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_context' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tagger_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tagger_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_id_and_taggable_type_and_context' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_id_and_taggable_type_and_context' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='taggings_idx' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='taggings_idx' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tags_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tags_on_name' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:01:00 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3872.9ms)
+  Rendered partials/_nav.html.erb (6.3ms)
+  Rendered partials/_myNav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 4376ms (Views: 4335.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/style.self-266368908ecac487774bb66a041ca7e27fb2d969c1e1cb77b660d83ae23fe8b0.css?body=1" for 175.223.33.96 at 2017-06-09 12:01:05 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/quick_view.self-6a55808a1d48d0bc97ddfe6661f43ae6440f644c3b962585a755e10a042f6566.js?body=1" for 175.223.33.96 at 2017-06-09 12:01:05 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/velocity.min.self-e3be506555d0bdb214820cff8a684f919a686cff0e903887c180d204d5a864d9.js?body=1" for 175.223.33.96 at 2017-06-09 12:01:05 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 175.223.33.96 at 2017-06-09 12:01:05 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:01:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:01:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/quick_view.self-dfd005df1bdebf4ce3df0f22b6d924b934f8852e6eaa8b16fb97a9897a81411f.css?body=1" for 175.223.33.96 at 2017-06-09 12:01:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/myNav.self-76d8bf9f6802da07bcb9c620cf169b5486d986f23f9a383e84b6f9d9d4126bf4.css?body=1" for 175.223.33.96 at 2017-06-09 12:01:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tab.self-d9d771ac73ee2238a38cf5074210bf489e9c57bc65c1311d19c9f65bdb091aac.css?body=1" for 175.223.33.96 at 2017-06-09 12:01:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tab_search.self-27b668079666973c266bc21d294597d14eca5b58dabb867ab2d6ba857b1fe594.js?body=1" for 175.223.33.96 at 2017-06-09 12:01:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 175.223.33.96 at 2017-06-09 12:03:14 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.9ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 274ms (Views: 254.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:03:15 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:03:16 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:04:02 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (4.3ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:04:03 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:04:03 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:06:55 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:06:55 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 175.223.33.96 at 2017-06-09 12:07:58 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:08:00 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:08:00 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:09:44 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.5ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 216ms (Views: 214.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:09:45 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:09:45 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:10:04 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (6.1ms)
+  Rendered partials/_nav.html.erb (1.2ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 147ms (Views: 145.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:10:05 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:10:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:10:16 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (5.4ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 211ms (Views: 209.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:10:16 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:10:16 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:10:52 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (5.1ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 122.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:10:52 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:10:53 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:11:10 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.3ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 91.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:11:15 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:11:24 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.9ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:11:24 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:11:25 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:11:33 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (3.2ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:11:33 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:11:33 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:11:54 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.2ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:11:54 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:11:54 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:12:03 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:12:04 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:12:04 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:12:08 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:12:09 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:12:23 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.4ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.8ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 105ms (Views: 104.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:12:24 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:12:24 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:12:32 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (3.1ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:12:32 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:12:32 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:13:11 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 87.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:13:11 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:13:12 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:13:50 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (3.2ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:13:51 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:13:51 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:14:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.7ms)
+  Rendered partials/_nav.html.erb (1.3ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 252ms (Views: 251.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:14:06 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:14:07 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:14:25 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (3.1ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:14:25 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:14:25 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 175.223.33.96 at 2017-06-09 12:15:02 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (5.3ms)
+  Rendered partials/_nav.html.erb (1.5ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 203ms (Views: 201.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:15:03 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:15:04 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 175.223.33.96 at 2017-06-09 12:15:18 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:15:19 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 175.223.33.96 at 2017-06-09 12:15:19 +0000
+Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
