@@ -1540,7 +1540,7 @@ a.logo:hover{
     position: relative;
 }
 .inner-nav ul li a{
-    color: #777;
+    color: #97d5e0;
     letter-spacing: 2px;
     display: inline-block;
     -moz-box-sizing: border-box;
@@ -3374,6 +3374,7 @@ a.logo:hover{
 }
 .work-img img{
     width: 100%;
+    height: 50%;
     display: block;
     overflow: hidden;
 }
@@ -3627,8 +3628,8 @@ a.logo:hover{
 }
 
 .work-full-media img{
-    max-width: 100%;
-    height: auto;
+    width: 1140px;
+    height: 750px;
 }
 .work-full-text{
     text-align: left;
