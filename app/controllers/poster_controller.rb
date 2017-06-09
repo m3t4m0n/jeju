@@ -19,6 +19,7 @@ class PosterController < ApplicationController
       @user_id.category=params[:category]
       @user_id.start_date=params[:start_date]
       @user_id.end_date=params[:end_date]
+      @user_id.tag_list.add(params[:tag_name], parse: true)
       @user_id.image= params[:image]
      
       

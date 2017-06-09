@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'nokogiri'
-gem 'rest-client'
-gem 'omniauth-facebook'
-gem 'devise'
+gem 'nokogiri'    # api parse
+gem 'rest-client'    # rest 통신 
+gem 'omniauth-facebook'    # 페이스북
+gem 'devise'    # login
+gem 'acts-as-taggable-on'
+
 gem 'modernizr-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

@@ -52,6 +52,13 @@
                 </div>
                 <hr class="mt-0 mb-30"/> 
                 <div class="section-text mb-30">
+                    <label>태그</label>
+                    <% @poster.tag_list.each do |t| %>
+                        <%= t %>
+                    <% end %>
+                </div>
+                <hr class="mt-0 mb-30"/> 
+                <div class="section-text mb-30">
                     
                     <i class="<%=@like_user%>" value="<%=@poster.id%>"></i>
                     <p id="like_p"class="like_p" value="<%=@poster.id%>"><%=@like%></p>

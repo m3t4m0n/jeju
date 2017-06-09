@@ -8,4 +8,5 @@ class Poster < ActiveRecord::Base
     
     mount_uploader :image, AvatarUploader
 
+    acts_as_taggable
 end

@@ -13,6 +13,7 @@
 //= require jquery2
 //= require jquery_ujs
 //= require tab_main
+//= require quick_view
 //= require myNav_main
 //= require modernizr
 //= require all
