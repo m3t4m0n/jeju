@@ -1,0 +1,1081 @@
+
+
+Started GET "/" for 223.62.8.107 at 2017-06-09 03:55:16 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.9ms)
+  [1m[36m (15.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (13.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosters (20170519043637)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "posters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "title" varchar, "host" varchar DEFAULT '-' NOT NULL, "place" varchar DEFAULT '-' NOT NULL, "intro" text DEFAULT '-' NOT NULL, "image" varchar DEFAULT 'footer_logo.png' NOT NULL, "start_date" datetime DEFAULT '-', "end_date" datetime DEFAULT '-', "like" integer DEFAULT 0 NOT NULL, "category" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170519043637"]]
+  [1m[35m (11.6ms)[0m  commit transaction
+Migrating to CreateReplies (20170519043643)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "replies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "poster_id" integer, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170519043643"]]
+  [1m[35m (10.9ms)[0m  commit transaction
+Migrating to CreateLikePosts (20170519053826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "like_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "poster_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170519053826"]]
+  [1m[35m (85.9ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20170519062449)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "grade" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170519062449"]]
+  [1m[36m (13.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 223.62.8.107 at 2017-06-09 03:55:43 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (20830.6ms)
+  [1m[36mUser Load (116.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (144.4ms)
+  Rendered partials/_myNav.html.erb (0.7ms)
+  Rendered partials/_footer.html.erb (2.4ms)
+Completed 200 OK in 21749ms (Views: 21614.5ms | ActiveRecord: 117.7ms)
+
+
+Started GET "/" for 223.62.8.107 at 2017-06-09 03:56:05 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 237ms (Views: 235.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 223.62.8.107 at 2017-06-09 03:56:05 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (133.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (3.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 391ms (Views: 388.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:06 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:07 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 223.62.8.107 at 2017-06-09 03:56:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (14.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (37.1ms)
+  Rendered partials/_nav.html.erb (1.7ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.3ms)
+Completed 200 OK in 568ms (Views: 413.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:11 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:11 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_up" for 223.62.8.107 at 2017-06-09 03:56:13 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (8.5ms)
+  Rendered partials/_nav.html.erb (1.4ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 269ms (Views: 267.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:14 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:14 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users" for 223.62.8.107 at 2017-06-09 03:56:24 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"23eOrgl3/U09QLa3NewFJ7yWb1JUhXodgEYuQQANoh4U2I81VihdLgcdW+QbbnGT76tPBUplXDBCnR0qoP82mg==", "user"=>{"email"=>"pilot0613@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'pilot0613@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "pilot0613@gmail.com"], ["encrypted_password", "$2a$11$6k5NE9Fli7ogdnDV/kk3xecg.e6B0LunQnvJ5c2grRX70vKsdEaMS"], ["created_at", "2017-06-09 03:56:24.611753"], ["updated_at", "2017-06-09 03:56:24.611753"]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-06-09 03:56:24.769204"], ["current_sign_in_at", "2017-06-09 03:56:24.769204"], ["last_sign_in_ip", "223.62.8.107"], ["current_sign_in_ip", "223.62.8.107"], ["sign_in_count", 1], ["updated_at", "2017-06-09 03:56:24.770564"], ["id", 1]]
+  [1m[35m (12.0ms)[0m  commit transaction
+Redirected to https://jeju-excavator.c9users.io/
+Completed 302 Found in 518ms (ActiveRecord: 27.2ms)
+
+
+Started POST "/users" for 223.62.8.107 at 2017-06-09 03:56:24 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"23eOrgl3/U09QLa3NewFJ7yWb1JUhXodgEYuQQANoh4U2I81VihdLgcdW+QbbnGT76tPBUplXDBCnR0qoP82mg==", "user"=>{"email"=>"pilot0613@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'pilot0613@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 629ms (Views: 358.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:26 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:26 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users" for 223.62.8.107 at 2017-06-09 03:56:39 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y3mzgTdf9oV1A2S8qs3uFQZN7HKSKK3qv4MTPtr8UEis1rIaaABW5k9eie+ET5qhVXDMJYzIi8d9WCBVeg7EzA==", "user"=>{"email"=>"pilot0613@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'pilot0613@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 546ms (Views: 199.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:40 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:40 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 223.62.8.107 at 2017-06-09 03:56:47 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 163ms (Views: 161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:47 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:47 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users/sign_in" for 223.62.8.107 at 2017-06-09 03:56:54 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nwfgvi7GNPPdVTePEdXPe4f/8Fi9dLW7Z2Vlh7+ByG1QqOElcZmUkOcI2tw/V7vP1MLQD6OUk5alvlbsH3Nc6Q==", "user"=>{"email"=>"pilot0613@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "pilot0613@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-06-09 03:56:54.382877"], ["sign_in_count", 2], ["updated_at", "2017-06-09 03:56:54.383939"], ["id", 1]]
+  [1m[35m (13.0ms)[0m  commit transaction
+Redirected to https://jeju-excavator.c9users.io/
+Completed 302 Found in 391ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/" for 223.62.8.107 at 2017-06-09 03:56:54 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 3[0m
+  Rendered common/index.html.erb within layouts/application (13.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 235ms (Views: 233.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:55 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:55 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 03:56:57 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  Rendered partials/_tab.html.erb (12.6ms)
+  Rendered poster/best.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 128ms (Views: 127.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:56:57 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:56:57 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 03:57:00 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  Rendered partials/_tab.html.erb (8.6ms)
+  Rendered poster/best.html.erb within layouts/application (9.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 108.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:57:01 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:57:01 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 03:58:12 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.5ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (21.3ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 242ms (Views: 232.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:58:13 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:58:14 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 223.62.8.107 at 2017-06-09 03:58:23 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT "posters".* FROM "posters"  ORDER BY posters.like desc[0m
+  Rendered poster/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 241ms (Views: 239.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:58:24 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:58:25 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/create" for 223.62.8.107 at 2017-06-09 03:58:26 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 160ms (Views: 159.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:58:27 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:58:27 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 223.62.8.107 at 2017-06-09 03:59:04 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vVNdKO3NEipewOZ2VocqQ/+quGSDvfvnjE04jx0kDh42ZV16ZiX+JdV0dxw90SG0HtDU7O2kpgbmBfidbOAtpg==", "title"=>"제목1", "host"=>"주최자1", "place"=>"장소1", "start_date"=>"20170522", "end_date"=>"20170613", "category"=>"0", "intro"=>"자기소개1", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3ff35f0818 @tempfile=#<Tempfile:/tmp/RackMultipart20170609-4355-1h0n2pn.jpg>, @original_filename="dummy_poster3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"dummy_poster3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "제목1"], ["intro", "자기소개1"], ["host", "주최자1"], ["place", "장소1"], ["user_id", 1], ["start_date", "2017-05-22 00:00:00.000000"], ["end_date", "2017-06-13 00:00:00.000000"], ["image", "dummy_poster3.jpg"], ["created_at", "2017-06-09 03:59:04.684039"], ["updated_at", "2017-06-09 03:59:04.684039"]]
+  [1m[36m (14.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://jeju-excavator.c9users.io/poster/index
+Completed 302 Found in 35ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/poster/index" for 223.62.8.107 at 2017-06-09 03:59:04 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.5ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.2ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:59:05 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:59:06 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/create" for 223.62.8.107 at 2017-06-09 03:59:12 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 236ms (Views: 235.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:59:13 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:59:14 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 223.62.8.107 at 2017-06-09 03:59:48 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DSyT7KOT5wS4vbdT/ljediPkALVM0ypyi0XhhmziEmiGGpO+KHsLCzMJJjmVDtWBwp5sPSLKd5PhDSGUHSYx0A==", "title"=>"제목2", "host"=>"주최자2", "place"=>"장소2", "start_date"=>"20170602", "end_date"=>"20170626", "category"=>"1", "intro"=>"자기소개2", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3fed683ab0 @tempfile=#<Tempfile:/tmp/RackMultipart20170609-4355-1caqccn.jpg>, @original_filename="dummy_poster5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"dummy_poster5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "category", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "제목2"], ["intro", "자기소개2"], ["host", "주최자2"], ["place", "장소2"], ["user_id", 1], ["category", 1], ["start_date", "2017-06-02 00:00:00.000000"], ["end_date", "2017-06-26 00:00:00.000000"], ["image", "dummy_poster5.jpg"], ["created_at", "2017-06-09 03:59:48.357272"], ["updated_at", "2017-06-09 03:59:48.357272"]]
+  [1m[35m (150.9ms)[0m  commit transaction
+Redirected to https://jeju-excavator.c9users.io/poster/index
+Completed 302 Found in 160ms (ActiveRecord: 151.7ms)
+
+
+Started GET "/poster/index" for 223.62.8.107 at 2017-06-09 03:59:49 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[36mPoster Load (0.4ms)[0m  [1mSELECT "posters".* FROM "posters"  ORDER BY posters.like desc[0m
+  Rendered poster/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (1.4ms)
+Completed 200 OK in 287ms (Views: 285.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:59:50 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:59:50 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/create" for 223.62.8.107 at 2017-06-09 03:59:54 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 219ms (Views: 218.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 03:59:54 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 03:59:54 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 223.62.8.107 at 2017-06-09 04:00:20 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/BocsHVrVX9BMoYp3D2lcn5dLlaFDIoHpPfoBf8rGPx3LBzi/oO5cMqGF0O3a66FnydC3usV1+bOvygXju87RA==", "title"=>"제목3", "host"=>"주최3", "place"=>"장소3", "start_date"=>"20170603", "end_date"=>"20170726", "category"=>"4", "intro"=>"자기소개3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3ff330bda0 @tempfile=#<Tempfile:/tmp/RackMultipart20170609-4355-tfu5i0.jpg>, @original_filename="dummy_poster6.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"dummy_poster6.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "category", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "제목3"], ["intro", "자기소개3"], ["host", "주최3"], ["place", "장소3"], ["user_id", 1], ["category", 4], ["start_date", "2017-06-03 00:00:00.000000"], ["end_date", "2017-07-26 00:00:00.000000"], ["image", "dummy_poster6.jpg"], ["created_at", "2017-06-09 04:00:20.248634"], ["updated_at", "2017-06-09 04:00:20.248634"]]
+  [1m[36m (13.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://jeju-excavator.c9users.io/poster/index
+Completed 302 Found in 24ms (ActiveRecord: 13.6ms)
+
+
+Started POST "/poster/upload" for 223.62.8.107 at 2017-06-09 04:00:21 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/BocsHVrVX9BMoYp3D2lcn5dLlaFDIoHpPfoBf8rGPx3LBzi/oO5cMqGF0O3a66FnydC3usV1+bOvygXju87RA==", "title"=>"제목3", "host"=>"주최3", "place"=>"장소3", "start_date"=>"20170603", "end_date"=>"20170726", "category"=>"4", "intro"=>"자기소개3", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3ff317cd68 @tempfile=#<Tempfile:/tmp/RackMultipart20170609-4355-1sts5ok.jpg>, @original_filename="dummy_poster6.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"dummy_poster6.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "category", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "제목3"], ["intro", "자기소개3"], ["host", "주최3"], ["place", "장소3"], ["user_id", 1], ["category", 4], ["start_date", "2017-06-03 00:00:00.000000"], ["end_date", "2017-07-26 00:00:00.000000"], ["image", "dummy_poster6.jpg"], ["created_at", "2017-06-09 04:00:21.165214"], ["updated_at", "2017-06-09 04:00:21.165214"]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://jeju-excavator.c9users.io/poster/index
+Completed 302 Found in 24ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/poster/index" for 223.62.8.107 at 2017-06-09 04:00:21 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.4ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:00:23 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:00:23 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/4/detail" for 223.62.8.107 at 2017-06-09 04:00:33 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '4')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 1], ["poster_id", "4"]]
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 4]]
+  Rendered poster/detail.html.erb within layouts/application (22.8ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 158ms (Views: 147.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:00:33 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:00:34 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/like" for 223.62.8.107 at 2017-06-09 04:00:48 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#like as */*
+  Parameters: {"post_id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "like_posts" ("user_id", "poster_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["poster_id", 4], ["created_at", "2017-06-09 04:00:48.041486"], ["updated_at", "2017-06-09 04:00:48.041486"]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '4')[0m
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 13.8ms)
+
+
+Started POST "/poster/like" for 223.62.8.107 at 2017-06-09 04:00:48 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#like as */*
+  Parameters: {"post_id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "like_posts" WHERE "like_posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (11.0ms)[0m  commit transaction
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '4')[0m
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 11.7ms)
+
+
+Started POST "/poster/like" for 223.62.8.107 at 2017-06-09 04:00:49 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#like as */*
+  Parameters: {"post_id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "like_posts" ("user_id", "poster_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["poster_id", 4], ["created_at", "2017-06-09 04:00:49.080597"], ["updated_at", "2017-06-09 04:00:49.080597"]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36mLikePost Load (0.3ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '4')[0m
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 13.6ms)
+
+
+Started POST "/poster/like" for 223.62.8.107 at 2017-06-09 04:00:49 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#like as */*
+  Parameters: {"post_id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "like_posts" WHERE "like_posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36mLikePost Load (0.3ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '4')[0m
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 12.7ms)
+
+
+Started POST "/poster/reply" for 223.62.8.107 at 2017-06-09 04:00:55 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#reply as */*
+  Parameters: {"content"=>"ㅗㅑ", "user_id"=>"1", "post_id"=>"4"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "replies" ("user_id", "content", "poster_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["content", "ㅗㅑ"], ["poster_id", 4], ["created_at", "2017-06-09 04:00:55.152031"], ["updated_at", "2017-06-09 04:00:55.152031"]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/poster/3/detail" for 223.62.8.107 at 2017-06-09 04:01:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPoster Load (0.1ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '3')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 1], ["poster_id", "3"]]
+  [1m[36mReply Load (0.1ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 3]]
+  Rendered poster/detail.html.erb within layouts/application (1.6ms)
+  Rendered partials/_nav.html.erb (0.7ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 163ms (Views: 159.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/poster/3/detail" for 223.62.8.107 at 2017-06-09 04:01:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '3')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 1], ["poster_id", "3"]]
+  [1m[36mReply Load (0.1ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 3]]
+  Rendered poster/detail.html.erb within layouts/application (2.0ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 97ms (Views: 92.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:01:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:01:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/rails/db" for 223.62.8.107 at 2017-06-09 04:01:28 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::DashboardController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/dashboard/index.html.erb within layouts/rails_db/application (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/shared/_header.html.erb (23.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/shared/_sidebar.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/shared/_gems.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/shared/_footer.html.erb (14.2ms)
+Completed 200 OK in 295ms (Views: 294.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rails/db/tables/posters/data" for 223.62.8.107 at 2017-06-09 04:01:32 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#data as JS
+  Parameters: {"table_id"=>"posters"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posters"
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/shared/_exp_col.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_condition_fields.html.erb (38.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_condition_fields.html.erb (13.3ms)
+  [1m[36m Load (0.6ms)[0m  [1mSELECT  "posters".* FROM "posters" LIMIT 25 OFFSET 0[0m
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_sql.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_data.html.erb (189.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/data.js.erb (193.7ms)
+Completed 200 OK in 233ms (Views: 199.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/rails/db/tables/posters/destroy?pk_id=4" for 223.62.8.107 at 2017-06-09 04:01:37 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#destroy as JS
+  Parameters: {"pk_id"=>"4", "table_id"=>"posters"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "posters"
+  [1m[36m (11.8ms)[0m  [1mDELETE FROM posters WHERE id = '4';[0m
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/shared/_exp_col.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_condition_fields.html.erb (13.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_condition_fields.html.erb (12.6ms)
+  [1m[35m Load (0.6ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 25 OFFSET 0
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_row.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_sql.html.erb (0.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_data.html.erb (90.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/destroy.js.erb (94.0ms)
+Completed 200 OK in 138ms (Views: 98.0ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/poster/index" for 223.62.8.107 at 2017-06-09 04:01:43 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"  ORDER BY posters.like desc[0m
+  Rendered poster/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:01:44 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:01:44 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:01:50 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 86ms (Views: 84.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:01:51 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:01:51 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:02:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:02:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:03:08 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:03:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:03:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:03:11 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:03:12 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:06:12 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.4ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 180ms (Views: 178.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/common.self-f9e91dd17133dd2514c7fda0ff023e55abd51fa64b32ef0c39a046583a808b16.css?body=1" for 223.62.8.107 at 2017-06-09 04:06:13 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:06:14 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:06:14 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:06:18 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:06:18 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/rails/db/tables/posters/edit?pk_id=1" for 223.62.8.107 at 2017-06-09 04:07:16 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RailsDb::TablesController#edit as JS
+  Parameters: {"pk_id"=>"1", "table_id"=>"posters"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "posters"[0m
+  [1m[35m Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/_edit.html.erb (45.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/rails_db-1.5.0/app/views/rails_db/tables/edit.js.erb (50.7ms)
+Completed 200 OK in 80ms (Views: 54.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:08:37 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 163.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/common.self-545b304628d06ef83a89e05ed18821635e40ca6f0ee497dbf51e7e35bcebe5f9.css?body=1" for 223.62.8.107 at 2017-06-09 04:08:37 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:08:38 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:08:38 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:10:36 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.5ms)
+  Rendered partials/_footer.html.erb (1.0ms)
+Completed 200 OK in 122ms (Views: 120.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:10:37 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:10:38 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:10:47 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.6ms)
+  Rendered partials/_footer.html.erb (1.1ms)
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:10:48 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:10:48 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:22:06 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.5ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:22:07 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:22:08 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 223.62.8.107 at 2017-06-09 04:22:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"  ORDER BY posters.like desc[0m
+  Rendered poster/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.7ms)
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:22:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:22:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:23:29 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:23:30 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:23:30 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:23:46 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:23:46 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.62.8.107 at 2017-06-09 04:24:26 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:24:27 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:24:27 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:25:09 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:25:10 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/1/detail" for 223.62.8.107 at 2017-06-09 04:28:36 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mLikePost Load (0.2ms)[0m  SELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '1')
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLikePost Load (0.1ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 1], ["poster_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", "1"]]
+  [1m[35mReply Load (0.1ms)[0m  SELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?  [["poster_id", 1]]
+  Rendered poster/detail.html.erb within layouts/application (1.9ms)
+  Rendered partials/_nav.html.erb (0.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.8ms)
+Completed 200 OK in 184ms (Views: 180.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.62.8.107 at 2017-06-09 04:28:37 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.62.8.107 at 2017-06-09 04:28:37 +0000
+Cannot render console from 223.62.8.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36m (13.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (11.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosters (20170519043637)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "posters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "title" varchar, "host" varchar DEFAULT '-' NOT NULL, "place" varchar DEFAULT '-' NOT NULL, "intro" text DEFAULT '-' NOT NULL, "image" varchar DEFAULT 'footer_logo.png' NOT NULL, "start_date" datetime DEFAULT '-', "end_date" datetime DEFAULT '-', "like" integer DEFAULT 0 NOT NULL, "category" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170519043637"]]
+  [1m[35m (11.2ms)[0m  commit transaction
+Migrating to CreateReplies (20170519043643)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "replies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "poster_id" integer, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170519043643"]]
+  [1m[35m (10.1ms)[0m  commit transaction
+Migrating to CreateLikePosts (20170519053826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "like_posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "poster_id" integer NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170519053826"]]
+  [1m[35m (12.5ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20170519062449)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "grade" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170519062449"]]
+  [1m[36m (15.4ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnsToUsers (20170609060521)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "nick" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "image" varchar
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170609060521"]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m

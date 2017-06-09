@@ -116,6 +116,12 @@ class PosterController < ApplicationController
     end
     
     def best
+        @every_post = Poster.all
+        @ep_title = Array.new { Array.new }
+        
+        @every_post.each do |ep|
+            @ep_title[ep.id] = ep.title
+        end
         
     end
 end
