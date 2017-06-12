@@ -3369,6 +3369,7 @@ a.logo:hover{
     border: none;
 }
 .work-img{
+    padding: 1%;
     position: relative;
     overflow: hidden;
 }
