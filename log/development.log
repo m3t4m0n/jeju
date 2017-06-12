@@ -7782,6 +7782,73 @@ Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:16:45 +0000
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 
+<<<<<<< HEAD
+Started GET "/" for 223.194.113.22 at 2017-06-09 15:27:05 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (1480.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (31.0ms)
+  Rendered partials/_myNav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 1844ms (Views: 1694.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:27:08 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:27:08 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 223.194.113.22 at 2017-06-09 15:27:25 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:27:25 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:27:26 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/img/item-1.jpg" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/img/item-1.jpg"):
+=======
 Started GET "/" for 175.223.33.96 at 2017-06-09 12:17:18 +0000
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by CommonController#index as HTML
@@ -7960,6 +8027,7 @@ Started GET "/images/jeju.jpg" for 175.223.33.96 at 2017-06-09 12:24:52 +0000
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/images/jeju.jpg"):
+>>>>>>> 9d46d34959cb6f6c251752fbb574bd1112a9c57d
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -7988,6 +8056,108 @@ ActionController::RoutingError (No route matches [GET] "/images/jeju.jpg"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/poster/2/detail" for 223.194.113.22 at 2017-06-09 15:28:09 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPoster Load (0.4ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLikePost Load (0.4ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '2')[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.4ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 1], ["poster_id", "2"]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.3ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 2]]
+  Rendered poster/detail.html.erb within layouts/application (99.6ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 243ms (Views: 222.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:28:10 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:28:10 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:00:19 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (1385.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (32.0ms)
+  Rendered partials/_myNav.html.erb (0.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 1682ms (Views: 1626.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:00:21 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:00:21 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 223.194.113.22 at 2017-06-10 13:00:41 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (3.9ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 133.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:00:42 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:00:42 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.194.113.22 at 2017-06-10 13:00:47 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (3.4ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:00:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:00:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/img/item-1.jpg" for 223.194.113.22 at 2017-06-10 13:00:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/img/item-1.jpg"):
+=======
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
@@ -8122,6 +8292,7 @@ Started GET "/images/portfolio/projects-1.jpg" for 175.223.33.96 at 2017-06-09 1
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/images/portfolio/projects-1.jpg"):
+>>>>>>> 9d46d34959cb6f6c251752fbb574bd1112a9c57d
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -8150,6 +8321,40 @@ ActionController::RoutingError (No route matches [GET] "/images/portfolio/projec
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.1ms)
+
+
+Started GET "/poster/best" for 223.194.113.22 at 2017-06-10 13:01:02 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:01:03 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:01:03 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/img/item-1.jpg" for 223.194.113.22 at 2017-06-10 13:01:03 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/img/item-1.jpg"):
+=======
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
@@ -8202,6 +8407,7 @@ Started GET "/images/portfolio/projects-2.jpg" for 175.223.33.96 at 2017-06-09 1
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/images/portfolio/projects-2.jpg"):
+>>>>>>> 9d46d34959cb6f6c251752fbb574bd1112a9c57d
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -8230,6 +8436,122 @@ ActionController::RoutingError (No route matches [GET] "/images/portfolio/projec
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.9ms)
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:01:26 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:01:26 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:01:27 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:02:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:02:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:14:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:14:49 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:14:49 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:25:36 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:25:38 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:25:38 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:28:13 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 126.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:28:14 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:28:14 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:28:55 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:28:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:28:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
@@ -8461,6 +8783,7 @@ Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:39:59 +0000
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+<<<<<<< HEAD
 
 
 Started GET "/" for 66.220.151.92 at 2017-06-09 12:49:09 +0000
@@ -9450,6 +9773,907 @@ AbstractController::ActionNotFound (The action 'facebook' could not be found for
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+<<<<<<< HEAD
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='taggings_idy' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='taggings_idy' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tagger_id_and_tagger_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tagger_id_and_tagger_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_context' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_context' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tagger_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tagger_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_type' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_taggable_id_and_taggable_type_and_context' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_taggable_id_and_taggable_type_and_context' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='taggings_idx' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='taggings_idx' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tags_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tags_on_name' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 125.130.208.62 at 2017-06-12 11:08:24 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4373.5ms)
+  Rendered partials/_nav.html.erb (8.6ms)
+  Rendered partials/_myNav.html.erb (0.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 4746ms (Views: 4706.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-5816c41df5966b8040224ff8753c01c9892908573b9d78ff535930784dc4d9dc.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:29 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/style.self-1ce09943736d76c6a268ff2ff6a8504d2c98b2e8be1721212bf723f0e10052af.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:29 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.self-2816ad89d4005ecc57c7af1b51023f4f51c436270397a296740c46f371b7902c.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.self-225bfea8911be322f5196b9f05b9ad89e006e377b30816ed15db35bad5212b1d.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/magnific-popup.self-4ec09c3ab5400e5fa3371f1d315481a8bc07657bf38b46bf1524d90f9fa1fb7d.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/YTPlayer.self-6dd9ab430668d863eea56355d3ee180e36a2c24841780bad633857ccff67b712.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.self-2a86d2017f4b74f22943750b3b50b9cb753581bab96cbdaaf2df53f4c04c995b.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.min.self-0d2311f1de8dd8413d008eeca58b85a7c22fb5c8adadd4d289e6ca65513b8f30.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/animate.min.self-3f66bce30358895b171c2d581059f125da634cb2d6d020fb595eedd46ee2b5b9.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-f362de31741c55bc8c3dc4b56585bc481aba4177a1f31246e782f4250d9d384d.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/mypage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/owl.carousel.self-49e63fcd73451082260e087dd44f8c14bdd2fa8b5a060b49671ff51eeb3bfd88.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/owl.transitions.self-fff066b05183538ba375ba3d7ae9c4c36c39fdde07d62583aff0d564447b256c.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/poster.self-ee852021b30b1f376dc936af254e585af0e79327a984f25362961ccea69478f7.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rev-slider.self-daf75b630dc8f660cd64b844a05e4f4fb4abc92caa6ca226a219ef98d9bf56ac.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/simpletextrotator.self-d494ed011929e690db8ec1263acdca124527ca308cd0fe38637e14aa0a4ad68e.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/quick_view.self-dfd005df1bdebf4ce3df0f22b6d924b934f8852e6eaa8b16fb97a9897a81411f.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/style-responsive.self-5ddb6916549eb0f60e126bdde9f39600fa2f2bb9c1ee7c79f80b1d1c3347c633.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-a2aa2e8a84932d541af14736ca397d6577cd49c35671e599be92e76d7a269563.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vertical-rhythm.min.self-f5c9d0f1ca7ab7e0d36105dfb054977578ca9b80a42c39e7872ec822613c1385.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:30 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery2.self-25ca496239ae8641a09627c8aace5863e7676e465fbb4ce81bc7eb78c4d15627.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tab_main.self-d3f63fab1cebc7611f37a2f98ee403e7e15c2c07f770e25930157e2dbf7b7e40.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/quick_view.self-6a55808a1d48d0bc97ddfe6661f43ae6440f644c3b962585a755e10a042f6566.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/myNav.self-76d8bf9f6802da07bcb9c620cf169b5486d986f23f9a383e84b6f9d9d4126bf4.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/myNav_main.self-b840a497db000e09e1501a80bee5d8d3f3e2f2fd7fa1f617e92d7b57f00cbad7.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/modernizr.self-654222debe8018b12f1993ceddff30dc163a7d5008d79869c399d6d167321f97.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/all.self-2b2659218143eeb1b81f6c7696eae06e3a45f850b698e7685bcf63c94c545473.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/contact-form.self-e6669d25f0260b786ec41924c7e66ba58fdc2a68850edf0afc0fadb65e0ec71b.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.min.self-c0cd04aee065218e79ed00c027740b6d89a2f2c8d6936f5cb54b905c11d48f62.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/contact-reservations-form.self-3267cb68a5b912c8832681d379544d1de9a65b28dea5491cb1abe76de0616a90.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/imagesloaded.pkgd.min.self-a1d38a7050f5d1d4da7719834b92e58cddf6f8905313f17dabcddb3c644dee60.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/SmoothScroll.self-ccfdc41ded32a215e6a1dc34024bcb53d91c1c7a2eb52830496161149a445efd.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/isotope.pkgd.min.self-791b378a71ca8f99b6df7f20779352fd12749998f9eee2b45d1efa6e39be6a92.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.ajaxchimp.min.self-90ab94234129978c5adc97c9485d7d5782be3a4e4c2279375264dc028bcf0b41.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tab.self-d9d771ac73ee2238a38cf5074210bf489e9c57bc65c1311d19c9f65bdb091aac.css?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.appear.self-925714b2f0611a59a88dd887c17bb9358e5f5348977bc2dfbc301b05392fd6f4.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.backgroundvideo.min.self-0204b2c735d56c2766b6cbcdf7ef65d568daec288d323e13b8e6ff80535cabc2.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.downCount.self-ad27e16d49e4f425157b9048581e1c3acaa6b49d100941b2d095435e951a69fa.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.countTo.self-8280e6e6fc8baa3be99494cdccde2e4dd1b5dcac927570e521bea17c9e5477ea.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.easing.1.3.self-5b6a7b711d68145722aa2e221afdda95cec412078d637a3425a21aeb1041e185.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.fitvids.self-3c6ad5325f55063e1946e70fdf572de4ee3d6c3013b28e54a8e845486271f154.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.localScroll.min.self-35a763ce393ea247fdbf622a09343e7105d9944a505c77389b9cdf10b95d87ef.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.magnific-popup.min.self-c97b215da7bef7c9f6d259db08978bc586b2ba4b425e03eef241f581ab72ed5d.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.mb.YTPlayer.self-880ecdee2e3022369cb29d69719749d14c10199e10c0bb24a810b950d53bd7e2.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.parallax-1.1.3.self-2e631a433d43f2d9782c7c04052960d2682016781c1869817049ba81b729ea69.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.mixitup.min.self-78d041c767279827b8177651a0989087e5a810de1a4e255a18326d1a5346cc66.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.scrollTo.min.self-be5822674f8f518c6073850e709fb02e3b1139771ffcb1773e8422b1ad570448.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.simple-text-rotator.min.self-1213f94b1f6c2b24bf33942c902fd8684ab89b5f34795dc63aa65bc317fa196d.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.sticky.self-c9dc8ec104c88f02b7247bceccae2023a665855ce57e2a3f714d1dfa62cb2262.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.viewport.mini.self-f7668b733423403c904bd6a72adab5f15d40f0b833df383a0050690c3450e7af.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry.pkgd.min.self-a089af08874793ce1b546204e7883730e1e3a32a000fa2361b0c31c005b9d044.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/mypage.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/owl.carousel.min.self-b14e406f56b99f5a8457a6b4b8bbfa7b7745319b1d4f84224757078a0b4881d7.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/placeholder.self-196f4cf4237e78a93dc1d2a0770b07314ae0b3ad249dd73c02a9769315d20255.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/poster.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tab_search.self-27b668079666973c266bc21d294597d14eca5b58dabb867ab2d6ba857b1fe594.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tiltfx.self-35341b99d60b6024f9022884c30a8ed6e6de49d69b6bba50a96575603b820857.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/user.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wow.min.self-f5ec19d5d2e8c14076e51853699bde6509e9a7576b760b5d8d835d2ebaf431a4.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/velocity.min.self-e3be506555d0bdb214820cff8a684f919a686cff0e903887c180d204d5a864d9.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/logo-1f19360a72fd630dc3e46f45a0e69ba75efc5bfd7360f0f800b1e3a189d239b5.png" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jeju1-ece54c50778ae1487b92841a7865d5a30f7264a731899e1c9fff3fcffa98de9c.png" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/my_jeju-7554eaf2622fbb1183b618dedef7cbec440dc9c665c7bd8bf918426aa9d6dd0d.png" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/background-58badd25d3248cda23b8d0ccd8f50a890c62a4f595931dd7c61726377294eaed.png" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cd-sprite-1-1a7be6039c6c2c3105d58f40cd66a03e68d327611cda82a709522e9e157edcbe.svg" for 125.130.208.62 at 2017-06-12 11:08:32 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/favicon-5796d8a871fe9aa29292f60602987bc57ba61043654354d47632849acf117d56.ico" for 125.130.208.62 at 2017-06-12 11:08:34 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 125.130.208.62 at 2017-06-12 11:08:37 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.7ms)
+  Rendered partials/_nav.html.erb (1.6ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 143ms (Views: 130.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 125.130.208.62 at 2017-06-12 11:08:37 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 125.130.208.62 at 2017-06-12 11:08:37 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_up" for 125.130.208.62 at 2017-06-12 11:08:40 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.6ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/et-line.css" for 125.130.208.62 at 2017-06-12 11:08:40 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 125.130.208.62 at 2017-06-12 11:08:40 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users" for 125.130.208.62 at 2017-06-12 11:08:49 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"paHOmrdeWIAqTk5Ax9TMmjsAiYBUv6haG8whMMp8bVNQArFTZMm36JOYXRbD3AI3c7iQTdLEY3vqocDtoq3rVw==", "user"=>{"email"=>"inwanj@naver.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'inwanj@naver.com' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "inwanj@naver.com"], ["encrypted_password", "$2a$11$taL1/wg5n3lxQNS5cV8FMOVi9lpzv7npXkKv2aioGrgYLQxHlZL76"], ["created_at", "2017-06-12 11:08:49.510760"], ["updated_at", "2017-06-12 11:08:49.510760"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-06-12 11:08:49.547127"], ["current_sign_in_at", "2017-06-12 11:08:49.547127"], ["last_sign_in_ip", "125.130.208.62"], ["current_sign_in_ip", "125.130.208.62"], ["sign_in_count", 1], ["updated_at", "2017-06-12 11:08:49.547992"], ["id", 2]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://jeju-aws-upload-janginwan.c9users.io/
+Completed 302 Found in 237ms (ActiveRecord: 22.3ms)
+
+
+Started GET "/" for 125.130.208.62 at 2017-06-12 11:08:49 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (3.3ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 144ms (Views: 142.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 125.130.208.62 at 2017-06-12 11:08:50 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 125.130.208.62 at 2017-06-12 11:08:50 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 125.130.208.62 at 2017-06-12 11:08:56 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 125.130.208.62 at 2017-06-12 11:08:57 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 125.130.208.62 at 2017-06-12 11:08:57 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/create" for 125.130.208.62 at 2017-06-12 11:08:59 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 190.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 125.130.208.62 at 2017-06-12 11:08:59 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 125.130.208.62 at 2017-06-12 11:08:59 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:09:40 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefe8e9b7b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-1jeumq0.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `resize_to_fit' for #<AvatarUploader::Uploader35820040:0x007fefe88c8d60>):
+  app/controllers/poster_controller.rb:23:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.3ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:10:17 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000002cb7a08 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-1xwu866.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `resize_to_fit' for #<AvatarUploader::Uploader35820040:0x007fefea65e488>):
+  app/controllers/poster_controller.rb:23:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.5ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:10:51 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefeb5a16c0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-1sjxqmg.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:10:51.462007"], ["updated_at", "2017-06-12 11:10:51.462007"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 2.8ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.3ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:12:00 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefe864cfc8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-8rc39y.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:12:00.457433"], ["updated_at", "2017-06-12 11:12:00.457433"]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.7ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:13:44 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefeac3ec68 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-v25bxz.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:13:45.007522"], ["updated_at", "2017-06-12 11:13:45.007522"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:14:01 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefea5def30 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-1av7zv.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:14:01.063784"], ["updated_at", "2017-06-12 11:14:01.063784"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:17:39 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000004e2edf8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-pe3sc0.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:17:39.698643"], ["updated_at", "2017-06-12 11:17:39.698643"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.2ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:18:28 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefea32c3f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-1f7s1d3.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:18:28.438030"], ["updated_at", "2017-06-12 11:18:28.438030"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.2ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:18:43 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefeab7b330 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-1ktstnp.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:18:43.893237"], ["updated_at", "2017-06-12 11:18:43.893237"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.0ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:19:51 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefeb6b9e68 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-52cpnb.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:19:51.871319"], ["updated_at", "2017-06-12 11:19:51.871319"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.0ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:28:36 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefeb14e730 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-16jsrra.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:28:36.864094"], ["updated_at", "2017-06-12 11:28:36.864094"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 1.9ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:32:14 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000022fd5f8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-16vptg.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `upload' for #<Poster:0x007fefeaa660a8>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:33:03 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefebe56478 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-v1zrtq.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `save=' for #<Poster:0x007fefe9f5cb58>
+Did you mean?  save
+               save!):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:33:31 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefe89b9670 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-15nxibo.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `save=' for #<Poster:0x007fefe868e3b0>
+Did you mean?  save
+               save!):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:33:52 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefea308978 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-188tisp.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:33:52.730496"], ["updated_at", "2017-06-12 11:33:52.730496"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.1ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:44:29 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefebad44a8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-wytik.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:44:29.453382"], ["updated_at", "2017-06-12 11:44:29.453382"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.0ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:46:06 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000027357d8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-6kjxnb.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:46:06.385357"], ["updated_at", "2017-06-12 11:46:06.385357"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 2.3ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+
+
+Started POST "/poster/upload" for 125.130.208.62 at 2017-06-12 11:49:45 +0000
+Cannot render console from 125.130.208.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fefeaa75670 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-2993-8z59n6.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 11:49:45.881212"], ["updated_at", "2017-06-12 11:49:45.881212"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://jejudatabase.s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.7ms)
+
+
+Started GET "/" for 110.70.46.215 at 2017-06-12 12:48:30 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (2757.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (27.6ms)
+  Rendered partials/_myNav.html.erb (0.3ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 3162ms (Views: 3111.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 12:48:34 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 12:48:34 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 110.70.46.215 at 2017-06-12 12:48:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.4ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 12:48:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster3.jpg" for 110.70.46.215 at 2017-06-12 12:48:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster3.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> d0b96e67a2917ffd18dc55b030f77f5e568d73bc
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -9477,6 +10701,7 @@ AbstractController::ActionNotFound (The action 'facebook' could not be found for
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
 
 
@@ -9521,6 +10746,21 @@ NameError (uninitialized constant Users):
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.1ms)
+
+
+Started GET "/poster/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg" for 110.70.46.215 at 2017-06-12 12:48:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> d0b96e67a2917ffd18dc55b030f77f5e568d73bc
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -9548,6 +10788,7 @@ NameError (uninitialized constant Users):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
@@ -9602,6 +10843,25 @@ ActionController::RoutingError (uninitialized constant Users):
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 12:48:41 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster3.jpg" for 110.70.46.215 at 2017-06-12 12:48:41 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster3.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> d0b96e67a2917ffd18dc55b030f77f5e568d73bc
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -9629,6 +10889,7 @@ ActionController::RoutingError (uninitialized constant Users):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
@@ -9727,6 +10988,20 @@ ActionController::RoutingError (uninitialized constant Users):
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.4ms)
+
+
+Started GET "/poster/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg" for 110.70.46.215 at 2017-06-12 12:48:41 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -9754,6 +11029,75 @@ ActionController::RoutingError (uninitialized constant Users):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.8ms)
+
+
+Started GET "/poster/2/detail" for 110.70.46.215 at 2017-06-12 12:48:44 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLikePost Load (0.1ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '2')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 2], ["poster_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 2], ["poster_id", "2"]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 2]]
+  Rendered poster/detail.html.erb within layouts/application (137.8ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 263ms (Views: 252.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 12:48:45 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 12:48:45 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/images/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg" for 110.70.46.215 at 2017-06-12 12:48:45 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/images/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> d0b96e67a2917ffd18dc55b030f77f5e568d73bc
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
@@ -9818,6 +11162,20 @@ NameError (uninitialized constant Users):
   actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
   actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.7ms)
+
+
+Started GET "/poster/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster3.jpg" for 110.70.46.215 at 2017-06-12 12:48:49 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster3.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -9845,6 +11203,48 @@ NameError (uninitialized constant Users):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.5ms)
+
+
+Started GET "/poster/s3.ap-northeast-2.amazonaws.com//jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg" for 110.70.46.215 at 2017-06-12 12:48:49 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/s3.ap-northeast-2.amazonaws.com/jejudatabase/Develope/uploads/jejudatabase/Develope/dummy_poster4.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> d0b96e67a2917ffd18dc55b030f77f5e568d73bc
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
@@ -13719,3 +15119,776 @@ Cannot render console from 1.214.248.229! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/et-line.css" for 1.214.248.229 at 2017-06-12 16:29:31 +0000
 Cannot render console from 1.214.248.229! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.9ms)
+
+
+Started GET "/poster/create" for 110.70.46.215 at 2017-06-12 12:48:51 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 206ms (Views: 205.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 12:48:51 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 12:48:52 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 12:49:04 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EhZDP2Mg+2XsGLvtMSAZNBdAROXqJXX7jf2lt6uHWYfntTz2sLcUDVXOqLs1KNeZX/hdKGxevtp8kERqw1bfgw==", "title"=>"asf", "host"=>"asdf", "place"=>"asdf", "start_date"=>"", "end_date"=>"", "tag_name"=>"", "category"=>"0", "intro"=>"adsf", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000060224b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1dalyh7.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "asf"], ["intro", "adsf"], ["host", "asdf"], ["place", "asdf"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 12:49:04.058876"], ["updated_at", "2017-06-12 12:49:04.058876"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.0ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 12:56:19 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef98150ec0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1jpzkcl.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 1.8ms)
+
+NameError (undefined local variable or method `image' for #<PosterController:0x007fef98153850>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.6ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 12:56:59 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EhZDP2Mg+2XsGLvtMSAZNBdAROXqJXX7jf2lt6uHWYfntTz2sLcUDVXOqLs1KNeZX/hdKGxevtp8kERqw1bfgw==", "title"=>"asf", "host"=>"asdf", "place"=>"asdf", "start_date"=>"", "end_date"=>"", "tag_name"=>"", "category"=>"0", "intro"=>"adsf", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9f024cc0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1nnelvg.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `title=' for #<AvatarUploader:0x007fef9808a270 @model=nil, @mounted_as=nil>):
+  app/controllers/poster_controller.rb:13:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 12:57:35 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef98788798 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-mit1eq.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `upload' for #<Poster:0x007fef9819bb78>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.4ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 12:57:49 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9cd76f48 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-23xgmq.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 12:57:49.953342"], ["updated_at", "2017-06-12 12:57:49.953342"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 2.4ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 12:58:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef995ec5f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1p5bj3f.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 12:58:40.441441"], ["updated_at", "2017-06-12 12:58:40.441441"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:01:00 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef99743f48 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-erlyfg.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:01:00.292619"], ["updated_at", "2017-06-12 13:01:00.292619"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 2.5ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:01:28 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9c2a3918 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-h2d360.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 2.1ms)
+
+NoMethodError (undefined method `save=' for #<Poster:0x00000005fe3738>
+Did you mean?  save
+               save!):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.3ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:03:23 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef999d7598 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1mtwxvd.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:03:23.701794"], ["updated_at", "2017-06-12 13:03:23.701794"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.8ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:11:21 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef98e387a0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-4gi6ny.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:11:21.700353"], ["updated_at", "2017-06-12 13:11:21.700353"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 169ms (ActiveRecord: 0.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:12:50 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9fc6c078 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1k5adv3.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:12:50.481856"], ["updated_at", "2017-06-12 13:12:50.481856"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.6ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:15:53 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000005cbb6f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-w6163l.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:15:53.989715"], ["updated_at", "2017-06-12 13:15:53.989715"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.9ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:17:26 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9921c038 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-16l8hf8.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:17:26.827484"], ["updated_at", "2017-06-12 13:17:26.827484"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:19:17 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef99b0c530 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1katqgm.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.4ms)
+
+NameError (undefined local variable or method `file' for #<PosterController:0x007fef99b0fcd0>
+Did you mean?  fail):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:19:43 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9eb5f4b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-kzkqbu.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.4ms)
+
+NameError (undefined local variable or method `file' for #<PosterController:0x007fef9ed25e98>
+Did you mean?  fail):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:19:58 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000001bb45f8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1binhqs.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.7ms)
+
+NameError (undefined local variable or method `save' for #<PosterController:0x00000001cce920>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:20:12 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef996a8ca0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-svtt5h.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 1.8ms)
+
+NameError (undefined local variable or method `save' for #<PosterController:0x007fef996ab680>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:20:26 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9fd38df8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1gtmi5g.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.4ms)
+
+NameError (undefined local variable or method `save' for #<PosterController:0x007fef9fd3b850>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:20:38 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x00000005c83c50 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-uspcmr.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.6ms)
+
+NameError (undefined local variable or method `save' for #<PosterController:0x00000005cabd40>):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:21:00 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9e6473b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1merqbv.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:21:00.895234"], ["updated_at", "2017-06-12 13:21:00.895234"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 2.2ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:21:45 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef99527318 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-ygi470.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:21:45.912906"], ["updated_at", "2017-06-12 13:21:45.912906"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:32:12 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9e9e1db8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-11i1xxd.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:32:12.215540"], ["updated_at", "2017-06-12 13:32:12.215540"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.9ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.9ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:33:02 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef998638b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1wdi6c1.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:33:02.935297"], ["updated_at", "2017-06-12 13:33:02.935297"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:33:24 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9fce00e0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-149f38h.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:33:24.017963"], ["updated_at", "2017-06-12 13:33:24.017963"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.7ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.3ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:33:35 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef984eeaa0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1hemt4f.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:33:35.392222"], ["updated_at", "2017-06-12 13:33:35.392222"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:34:23 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000560c408 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-6n3boy.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 2.2ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:34:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef999ab0d8 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1ehjfei.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.8ms)
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.0ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:35:01 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef98af9fd0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1jigvpb.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:35:01.307594"], ["updated_at", "2017-06-12 13:35:01.307594"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 2.2ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.7ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:35:16 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000540b690 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-rvwttq.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:35:16.682474"], ["updated_at", "2017-06-12 13:35:16.682474"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 2.1ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:36:10 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef98e0bf70 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1m5mm5j.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `url' for #<PosterController:0x007fef98e12cf8>
+Did you mean?  url_for
+               url_options
+               URI):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.9ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:36:25 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef9ec9e448 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-1l2mq0u.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:36:25.498409"], ["updated_at", "2017-06-12 13:36:25.498409"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 2.4ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:37:30 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000350b470 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-jk54oh.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:37:30.348486"], ["updated_at", "2017-06-12 13:37:30.348486"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:39:43 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWatKLiiSSvTR2Cru/++Q3vgxzgbOtxQhgcE9LnC9ez8xdLhazWmQ2qRc/2/93DuM1je9Z1BF3F3auUp0RNz6A==", "title"=>"aws", "host"=>"제발", "place"=>"되라", "start_date"=>"부탁한다", "end_date"=>"제발!!!", "tag_name"=>"!!", "category"=>"0", "intro"=>"aws", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fef993fec70 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-12581-8l1wh0.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "aws"], ["intro", "aws"], ["host", "제발"], ["place", "되라"], ["user_id", 2], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:39:43.350030"], ["updated_at", "2017-06-12 13:39:43.350030"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+URI::InvalidURIError (bad URI(is not URI?): ://s3-ap-northeast-2.amazonaws.com:):
+  app/controllers/poster_controller.rb:26:in `upload'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.8ms)
+
+
+Started GET "/" for 110.70.46.215 at 2017-06-12 13:40:36 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (2669.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (25.7ms)
+  Rendered partials/_myNav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 3025ms (Views: 2971.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 13:40:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 13:40:40 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 110.70.46.215 at 2017-06-12 13:40:48 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 13:40:48 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 13:40:48 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/create" for 110.70.46.215 at 2017-06-12 13:40:54 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (1.8ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 84.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 13:40:54 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 13:40:55 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 110.70.46.215 at 2017-06-12 13:41:22 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6/NATbOPFVjBMvgPmpnDwJ1TnX3jbys1qhCZkEbJEI8eUD+EYBj6MHjk61mekQ1t1euEsGUU4BRbfXhNLhiWiw==", "title"=>"d", "host"=>"f", "place"=>"s", "start_date"=>"20170625", "end_date"=>"20170625", "tag_name"=>"kfl,ak,d", "category"=>"0", "intro"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f1211ce48f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170612-14205-y94261.jpg>, @original_filename="찜닭.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"\xEC\xB0\x9C\xEB\x8B\xAD.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "d"], ["intro", ""], ["host", "f"], ["place", "s"], ["user_id", 2], ["start_date", "2017-06-25 00:00:00.000000"], ["end_date", "2017-06-25 00:00:00.000000"], ["image", "찜닭.jpg"], ["created_at", "2017-06-12 13:41:22.631391"], ["updated_at", "2017-06-12 13:41:22.631391"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('kfl') OR LOWER(name) = LOWER('ak') OR LOWER(name) = LOWER('d'))
+  [1m[36mActsAsTaggableOn::Tag Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'kfl' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "kfl"]]
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'ak' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "ak"]]
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = 'd' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "d"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 3], ["taggable_type", "Poster"]]
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  SELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 7 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 3 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 7], ["context", "tags"], ["taggable_id", 3], ["taggable_type", "Poster"], ["created_at", "2017-06-12 13:41:23.898863"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 7]]
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.1ms)[0m  SELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 8 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 3 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 8], ["context", "tags"], ["taggable_id", 3], ["taggable_type", "Poster"], ["created_at", "2017-06-12 13:41:23.907108"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 8]]
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.1ms)[0m  SELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 9 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 3 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["context", "tags"], ["taggable_id", 3], ["taggable_type", "Poster"], ["created_at", "2017-06-12 13:41:23.911401"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (26.3ms)[0m  commit transaction
+Redirected to https://jeju-aws-upload-janginwan.c9users.io/poster/index
+Completed 302 Found in 1351ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/poster/index" for 110.70.46.215 at 2017-06-12 13:41:24 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"  ORDER BY posters.like desc[0m
+  Rendered poster/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 137ms (Views: 136.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 110.70.46.215 at 2017-06-12 13:41:24 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 110.70.46.215 at 2017-06-12 13:41:24 +0000
+Cannot render console from 110.70.46.215! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+>>>>>>> 9d46d34959cb6f6c251752fbb574bd1112a9c57d
+>>>>>>> e2ea8ae1473e8ee8604b1204fd43de55c8f0ff8e
+>>>>>>> d0b96e67a2917ffd18dc55b030f77f5e568d73bc

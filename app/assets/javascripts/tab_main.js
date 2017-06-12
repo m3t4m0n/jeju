@@ -56,9 +56,18 @@ jQuery(document).ready(function($){
 	});
 
 	function fixGallery() {
+		var main_content = $('.cd-main-content');
+		var offsetTop, scrollTop;
+		
+		/*
 		var offsetTop = $('.cd-main-content').offset().top,
+		*/
+		
+		if(main_content.length > 0) {
+			offsetTop = main_content.offset().top,
 			scrollTop = $(window).scrollTop();
-		( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('is-fixed') : $('.cd-main-content').removeClass('is-fixed');
+			( scrollTop >= offsetTop ) ? $('.cd-main-content').addClass('is-fixed') : $('.cd-main-content').removeClass('is-fixed');
+		}
 	}
 
 	/************************************
