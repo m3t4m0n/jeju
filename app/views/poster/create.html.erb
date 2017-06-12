@@ -18,11 +18,11 @@
           <input type="content" name="place" id="place" class="input-lg form-control" placeholder="place" maxlength="100"><br><br>
       </div>
       <div class="col-sm-offset-3 col-sm-6 mb-20">
-           <label for="intro">시작일</label>
+           <label for="intro">쓰는 날</label>
            <input type="datetime" name="start_date" id="start_date" class="input-lg form-control" placeholder="Enter start date ex)20170516" maxlength="100"><br><br>
       </div>
       <div class="col-sm-offset-3 col-sm-6 mb-20">
-          <label for="intro">종료일</label>
+          <label for="intro">받고 싶은 날</label>
           <input type="datetime" name="end_date" id="end_date" class="input-lg form-control" placeholder="Enter end date ex)20170516" maxlength="100"><br><br>
       </div>
       <div class="col-sm-offset-3 col-sm-6 mb-20">
@@ -35,29 +35,29 @@
                 <div class="col-sm-4 mb-40">
                      <div class="mb-20 mb-md-10">
                         <select class="input-md form-control" id="category" name="category">
-                            <option value="0">멋쟁이 사자처럼</option>
-                            <option value="1">동아리</option>
-                            <option value="2">학과 행사</option>
-                            <option value="3">교내 행사</option>
-                            <option value="4">장학금</option>
-                            <option value="5">교외 행사</option>
-                            <option value="6">기타</option>
+                            <option value="0">사랑</option>
+                            <option value="1">우정</option>
+                            <option value="2">행복</option>
+                            <option value="3">꿈</option>
+                            <option value="4">희망</option>
+                            <option value="5">위로</option>
+                            <option value="6">슬픔</option>
                         </select>
                     </div>
                 </div>
             </div>
         </div>
       <div class="col-sm-offset-3 col-sm-6 mb-20">
-          <label for="intro">자기소개</label>
+          <label for="intro">엽서 쓰기</label>
           <textarea name="intro" class="input-md form-control" rows="10" , cols="50", placeholder="Enter intro "></textarea><br>
       </div>
       <div class="col-sm-offset-3 col-sm-6 mb-20">
-         <label for="intro">포스터를 업로드해주세요</label> 
+         <label for="intro">사진을 업로드해주세요</label> 
          
           <%= file_field_tag 'image'%>
       </div>
       <div class="col-sm-offset-3 col-sm-6 mb-20">
-        <%= submit_tag %>
+        <label type="file" accept="image/*"><%= submit_tag %>
       </div>
 <% end %>
 </div>
