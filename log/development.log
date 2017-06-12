@@ -7780,3 +7780,400 @@ Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/et-line.css" for 175.223.33.96 at 2017-06-09 12:16:45 +0000
 Cannot render console from 175.223.33.96! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-09 15:27:05 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (1480.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (31.0ms)
+  Rendered partials/_myNav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 1844ms (Views: 1694.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:27:08 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:27:08 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 223.194.113.22 at 2017-06-09 15:27:25 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:27:25 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:27:26 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.4ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/img/item-1.jpg" for 223.194.113.22 at 2017-06-09 15:27:29 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/img/item-1.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.0ms)
+
+
+Started GET "/poster/2/detail" for 223.194.113.22 at 2017-06-09 15:28:09 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPoster Load (0.4ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLikePost Load (0.4ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '2')[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.4ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 1], ["poster_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 1], ["poster_id", "2"]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.3ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 2]]
+  Rendered poster/detail.html.erb within layouts/application (99.6ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 243ms (Views: 222.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-09 15:28:10 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-09 15:28:10 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:00:19 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (1385.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (32.0ms)
+  Rendered partials/_myNav.html.erb (0.5ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 1682ms (Views: 1626.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:00:21 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:00:21 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 223.194.113.22 at 2017-06-10 13:00:41 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (3.9ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 133.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:00:42 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:00:42 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 223.194.113.22 at 2017-06-10 13:00:47 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (3.4ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:00:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:00:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/img/item-1.jpg" for 223.194.113.22 at 2017-06-10 13:00:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/img/item-1.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.1ms)
+
+
+Started GET "/poster/best" for 223.194.113.22 at 2017-06-10 13:01:02 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:01:03 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:01:03 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/img/item-1.jpg" for 223.194.113.22 at 2017-06-10 13:01:03 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/poster/img/item-1.jpg"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.9ms)
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:01:26 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:01:26 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:01:27 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:02:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:02:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:14:48 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (1.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:14:49 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:14:49 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:25:36 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:25:38 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:25:38 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:28:13 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 126.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:28:14 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:28:14 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 223.194.113.22 at 2017-06-10 13:28:55 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 223.194.113.22 at 2017-06-10 13:28:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 223.194.113.22 at 2017-06-10 13:28:56 +0000
+Cannot render console from 223.194.113.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255

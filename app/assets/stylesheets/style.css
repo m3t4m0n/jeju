@@ -1061,7 +1061,7 @@ a.btn-mod:focus{
     height: 40px;
     margin-left: -20px;
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
     left: 50%;
     text-align: center;
     text-decoration: none;
