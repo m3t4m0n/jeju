@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gem 'nokogiri'    # api parse
 gem 'rest-client'    # rest 통신 
 gem 'omniauth-facebook'    # 페이스북

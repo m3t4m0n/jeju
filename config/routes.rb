@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   root 'common#index'
   get 'poster/index'
   post 'poster/upload'
@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   post 'poster/reply'
   get 'common/soomin_test'
   get 'poster/best' => 'poster#best'
-  
+  get 'common/mypage/:id' => 'common#mypage'
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
