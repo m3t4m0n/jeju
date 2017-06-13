@@ -17439,3 +17439,92 @@ Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 12
 
 Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:12:28 +0000
 Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 123.141.225.115 at 2017-06-13 08:43:59 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommonController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" LIMIT 3
+  Rendered common/index.html.erb within layouts/application (1459.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (32.7ms)
+  Rendered partials/_myNav.html.erb (0.4ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 1792ms (Views: 1719.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:44:01 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:44:02 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 123.141.225.115 at 2017-06-13 08:44:04 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:44:05 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:44:05 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:44:07 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 98.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:44:07 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:44:08 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:44:14 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:44:14 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:45:13 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.4ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (3.7ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 129ms (Views: 127.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:45:14 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:45:15 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
