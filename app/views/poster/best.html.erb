@@ -15,7 +15,7 @@
 		<section class="cd-gallery">
 			<ul>
 			    <% @every_post.each do |ep| %>
-			        <li class="mix <%= @ep_title[ep.id] %> col-sm-4 mb-xs-30">
+			        <li class="mix <%= @ep_title[ep.id] %> col-sm-4 mb-xs-30" style="padding-left: 0px padding-right: 0px">
 			            <a href="/poster/<%=ep.id%>/detail">
 			            <div class="wow fadeInUp">
 			                <div class="team-item">

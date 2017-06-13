@@ -17007,3 +17007,435 @@ Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 12
 
 Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 07:29:45 +0000
 Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 123.141.225.115 at 2017-06-13 07:59:36 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7ClBCwoLzIXwSLRT16/dJf/2UP01HCgXVYpwaygxYtI2XnAfN1v+ahCYVmJEPusnorcl/DLhf3RgCR/L5wJDbg==", "title"=>"제목", "host"=>"주최자", "place"=>"장소", "start_date"=>"20170530", "end_date"=>"20170613", "tag_name"=>"하늘, 위로", "category"=>"0", "recommend"=>"카프리치오 60우리의 뿌리는 아득히 뻗어올라가 은하 너머컴컴한 성운 속에 스며 흩어져 버리고.우리는 그저 요철(凹凸)없는 시간을미끄럼질 타는 것이 즐거워서 저어 갈 뿐이다.형이상학 막걸리를 연거푸 마셔도 화장(化粧)한핵(核)이 더욱 가려워서 긁는다. 영아(&amp;#23344;兒)가 무슨꼬리 달린 괘(卦)를 뽑건 말건 긁는다.아닌 곳에서 한떨기 백합을 만나 새삼 놀라며입술로 갖다 대며 이제 너의 신비를홀로 지키겠노라고 뜨거운 다짐을 하곤머뭇머뭇 잠시 옥빛 우울에 잠겨 있다가때마침 머리 위를 쌔앵 스치는 쌍쌍 제트기에기분이 상쾌해져서 어서 가야 한다고 우우 앗기합도 늠름히 사수좌(射手座)로 달려간다.지붕 위에선 얼마나 탐스런 비둘기가 사연 물고오며 가며 하는 줄도 모르고 지붕 밑에선불덩어리 12음(音)을 되는 대로 씹으면소리끼리 희한한 대구(對句)처럼 맞아들어갔다가사팔눈처럼 어긋났다가 다시 맞았다가아슬아슬 딸 듯 잃을 듯 점점 영혼이 개운해져진구렁 속으로 사뿐사뿐 빠진다.얼마나 노여운 서러움이 크림 같은 뼈 속에서콩알만한 부적처럼 움트고 있는 줄도 모르고의기양양하게 비웃으며 짜증내며 더 빨아 달라고용을 쓰며 빨아 가며 삽시간에 다다르려고질질 끌고만 가다가 별안간 비위가 뒤집히면흑흑 흐느끼며 제단의 안팎을 질주한다.우린 삐에로라. 가없는 거미줄에 똥그란 빵, 다리,파리, 부라져 따위와 함께 얽혀서 허위적거리는삐에로라. 헛소리 피릴 불지 않고선 해가 안 솟는삐에로올시다. 중풍쟁이모양 덜덜덜 떨며 세 끼씩죽음의 운하를 후비지 않고선 달도 안 뜨고,영생을 맛볼 수도, 꿈꿀 수도 없는아으. 우린 그저 묵을 삐에로야요.예감하고 볼이 팍 팽긴 달을 보고 예감하고파이프오르간을 무섭게 실감하고 부랴사랴몇백억도 넘는 알을 낭비해 가면서끝으로 귀한 알을 꼭 박기 위해서죽어도 한번 꼭 박기 위해서 꽃무덤 속에꼭 하나 사리알을 꼭 박기 위해서성난 뿔로 받는다.- &lt;한국현대대표시선 2&gt;, 민영 외 편, 창작과비평사, 1992", "intro"=>"카프리치오 60우리의 뿌리는 아득히 뻗어올라가", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f76b3329ef8 @tempfile=#<Tempfile:/tmp/RackMultipart20170613-30527-1bwxe9.jpg>, @original_filename="dummy_poster.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"dummy_poster.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "제목"], ["intro", "카프리치오 60우리의 뿌리는 아득히 뻗어올라가"], ["host", "주최자"], ["place", "장소"], ["user_id", 2], ["start_date", "2017-05-30 00:00:00.000000"], ["end_date", "2017-06-13 00:00:00.000000"], ["image", "dummy_poster.jpg"], ["created_at", "2017-06-13 07:59:36.301401"], ["updated_at", "2017-06-13 07:59:36.301401"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('하늘') OR LOWER(name) = LOWER('위로'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.1ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = '하늘' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "하늘"]]
+  [1m[35mActsAsTaggableOn::Tag Exists (0.1ms)[0m  SELECT  1 AS one FROM "tags" WHERE "tags"."name" = '위로' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "위로"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 1], ["taggable_type", "Poster"]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 1 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 1 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)  [["tag_id", 1], ["context", "tags"], ["taggable_id", 1], ["taggable_type", "Poster"], ["created_at", "2017-06-13 07:59:37.292117"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?  [["id", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 2 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 1 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)  [["tag_id", 2], ["context", "tags"], ["taggable_id", 1], ["taggable_type", "Poster"], ["created_at", "2017-06-13 07:59:37.300921"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.0ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?  [["id", 2]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://jeju-excavator.c9users.io/poster/index
+Completed 302 Found in 1151ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/poster/index" for 123.141.225.115 at 2017-06-13 07:59:39 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (3.6ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 173ms (Views: 172.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 07:59:42 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 07:59:43 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/1/detail" for 123.141.225.115 at 2017-06-13 07:59:53 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPoster Load (0.3ms)[0m  SELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '1')[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mLikePost Load (0.2ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 2], ["poster_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 2], ["poster_id", "1"]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 1], ["taggable_type", "Poster"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.1ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)  [["taggable_id", 1], ["taggable_type", "Poster"]]
+  [1m[36mReply Load (0.2ms)[0m  [1mSELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?[0m  [["poster_id", 1]]
+  Rendered poster/detail.html.erb within layouts/application (12.4ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 121.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 07:59:54 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 07:59:54 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 123.141.225.115 at 2017-06-13 08:01:59 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:02:00 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.4ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.6ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 123.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:02:00 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:02:00 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:02:07 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:02:07 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:04:46 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 91.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:04:47 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:04:47 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:04:59 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.7ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 237ms (Views: 235.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:05:00 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:05:00 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:05:03 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.2ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:05:04 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:05:04 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:05:53 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.4ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.9ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:05:54 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:05:54 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:06:12 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"
+  Rendered poster/best.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 214ms (Views: 212.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:06:14 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:06:14 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/index" for 123.141.225.115 at 2017-06-13 08:06:27 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[35mPoster Load (0.3ms)[0m  SELECT "posters".* FROM "posters"  ORDER BY posters.like desc
+  Rendered poster/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:06:28 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:06:28 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/create" for 123.141.225.115 at 2017-06-13 08:06:30 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#create as HTML
+  Rendered poster/create.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.8ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 574ms (Views: 143.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:06:31 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:06:32 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/poster/upload" for 123.141.225.115 at 2017-06-13 08:07:27 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yeYFSjJzS6Ptv3sQWFHEYVI9StSHWhNW4PwLJX5InpATkTReDyN5TA1vmSHLwPJjD3w/1YCnRDXVf2SFsXu/LA==", "title"=>"제목2", "host"=>"주최2", "place"=>"장소2", "start_date"=>"20170613", "end_date"=>"20170620", "tag_name"=>"아마, 땅", "category"=>"2", "recommend"=>"나그네江나루 건너서밀밭 길을구름에 달 가듯이가는 나그네길은 외줄기南道 三百里술 익는 마을마다 타는 저녁 놀구름에 달 가듯이 가는 나그네 &lt;박목월 시전집&gt;, 민음사, 2003&lt;div/&gt;", "intro"=>"나그네江나루 건너서밀밭 길을구름에 달 가듯이가는 나그네길은 외줄기南道 三百里술 익는 마을마다 타는 저녁 놀구름에 달 가듯이 가는 나그네 &lt;박목월 시전집&gt;, 민음사, 2003&lt;div/&gt;", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f76a44618e8 @tempfile=#<Tempfile:/tmp/RackMultipart20170613-30527-1pdq2lv.jpg>, @original_filename="dummy_poster3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"image\"; filename=\"dummy_poster3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "commit"=>"Save changes"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posters" ("title", "intro", "host", "place", "user_id", "category", "start_date", "end_date", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "제목2"], ["intro", "나그네江나루 건너서밀밭 길을구름에 달 가듯이가는 나그네길은 외줄기南道 三百里술 익는 마을마다 타는 저녁 놀구름에 달 가듯이 가는 나그네 &lt;박목월 시전집&gt;, 민음사, 2003&lt;div/&gt;"], ["host", "주최2"], ["place", "장소2"], ["user_id", 2], ["category", 2], ["start_date", "2017-06-13 00:00:00.000000"], ["end_date", "2017-06-20 00:00:00.000000"], ["image", "dummy_poster3.jpg"], ["created_at", "2017-06-13 08:07:27.317856"], ["updated_at", "2017-06-13 08:07:27.317856"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('아마') OR LOWER(name) = LOWER('땅'))
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = '아마' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "아마"]]
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = '땅' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "땅"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.1ms)[0m  SELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 3 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 2 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["context", "tags"], ["taggable_id", 2], ["taggable_type", "Poster"], ["created_at", "2017-06-13 08:07:28.422942"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  SELECT  1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 4 AND "taggings"."taggable_type" = 'Poster' AND "taggings"."taggable_id" = 2 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "context", "taggable_id", "taggable_type", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["context", "tags"], ["taggable_id", 2], ["taggable_type", "Poster"], ["created_at", "2017-06-13 08:07:28.427597"]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.0ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[35m (16.8ms)[0m  commit transaction
+Redirected to https://jeju-excavator.c9users.io/poster/index
+Completed 302 Found in 1143ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/poster/index" for 123.141.225.115 at 2017-06-13 08:07:29 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#index as HTML
+  [1m[36mPoster Load (0.4ms)[0m  [1mSELECT "posters".* FROM "posters"  ORDER BY posters.like desc[0m
+  Rendered poster/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.1ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:07:30 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:07:30 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:07:34 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.3ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:07:35 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:07:35 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/2/detail" for 123.141.225.115 at 2017-06-13 08:08:23 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLikePost Load (0.2ms)[0m  SELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '2')
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mLikePost Load (0.1ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 2], ["poster_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 2], ["poster_id", "2"]]
+  [1m[35mActsAsTaggableOn::Tagging Load (0.1ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[35mReply Load (0.1ms)[0m  SELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?  [["poster_id", 2]]
+  Rendered poster/detail.html.erb within layouts/application (5.2ms)
+  Rendered partials/_nav.html.erb (1.0ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 125ms (Views: 120.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:08:24 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:08:24 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:11:46 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.4ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (3.3ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 177ms (Views: 175.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:11:48 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:11:48 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:12:10 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.4ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.5ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 137ms (Views: 135.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:12:11 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:12:11 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/best" for 123.141.225.115 at 2017-06-13 08:12:15 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#best as HTML
+  [1m[36mPoster Load (0.3ms)[0m  [1mSELECT "posters".* FROM "posters"[0m
+  Rendered poster/best.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered partials/_nav.html.erb (2.2ms)
+  Rendered partials/_myNav.html.erb (0.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:12:16 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:12:16 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/poster/2/detail" for 123.141.225.115 at 2017-06-13 08:12:28 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PosterController#detail as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPoster Load (0.2ms)[0m  [1mSELECT  "posters".* FROM "posters" WHERE "posters"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLikePost Load (0.3ms)[0m  SELECT "like_posts".* FROM "like_posts" WHERE (poster_id = '2')
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mLikePost Load (0.1ms)[0m  SELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1  [["user_id", 2], ["poster_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "like_posts".* FROM "like_posts" WHERE "like_posts"."user_id" = ? AND "like_posts"."poster_id" = ? LIMIT 1[0m  [["user_id", 2], ["poster_id", "2"]]
+  [1m[35mActsAsTaggableOn::Tagging Load (0.2ms)[0m  SELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Poster"]]
+  [1m[35mReply Load (0.1ms)[0m  SELECT "replies".* FROM "replies" WHERE "replies"."poster_id" = ?  [["poster_id", 2]]
+  Rendered poster/detail.html.erb within layouts/application (121.5ms)
+  Rendered partials/_nav.html.erb (1.1ms)
+  Rendered partials/_myNav.html.erb (0.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 266ms (Views: 260.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 123.141.225.115 at 2017-06-13 08:12:28 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/et-line.css" for 123.141.225.115 at 2017-06-13 08:12:28 +0000
+Cannot render console from 123.141.225.115! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
