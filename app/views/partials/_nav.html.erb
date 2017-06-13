@@ -16,13 +16,17 @@
             <div class="inner-nav desktop-nav">
                 <ul class="clearlist scroll-nav local-scroll">
                     <li class="active"><a href="/" style="height: 75px; line-height: 75px;" class="">Home</a></li>
-     
                     <% if current_user%>
                         <!--로그인 중이다. 로그아웃 창 떠야함 -->
-                        <li><a href="/poster/index" style="height: 75px; line-height: 75px;" class=""><%=current_user.name%></a></li>
                         <li><a href="/poster/index" style="height: 75px; line-height: 75px;" class="">poster</a></li>
                         <li><a href="/poster/best" style="height: 75px; line-height: 75px;" class="">best_poster</a></li>
-                        <li><a href="/users/sign_out" style="height: 75px; line-height: 75px;" class=""><%=image_tag(current_user.image,class:'img-circle')%></a></li>
+                        <li><a href="/users/sign_out" style="height: 75px; line-height: 75px;" class="">
+                        <%if(current_user.image.nil?)%>
+                            Logout
+                        <%else%>
+                            <%=image_tag(current_user.image,class:'img-circle')%>
+                        <%end%>
+                        </a></li>
                      
                     <% else %>
                         <!--로그아웃 중이다. 로그인 창 떠야함 -->
