@@ -25,6 +25,8 @@ class PosterController < ApplicationController
       
       @user_id.save
       
+     
+      
       redirect_to '/poster/index'
     end
     

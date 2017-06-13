@@ -27,6 +27,13 @@ class CommonController < ApplicationController
      
       @poster_index = Poster.take(3)
   end
+  
+  def mypage
+    
+    @user = User.find(params[:id])
+    
+  end
+  
    
 end
 

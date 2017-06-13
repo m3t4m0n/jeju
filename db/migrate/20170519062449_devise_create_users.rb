@@ -7,7 +7,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
       
       ## add_column for Profile
       # t.string :nick
-      # t.string :image
 
       ## Recoverable
       t.string   :reset_password_token
@@ -25,6 +24,14 @@ class DeviseCreateUsers < ActiveRecord::Migration
       
       t.integer :grade
       
+      #facebook
+      t.string :name     #: 페이스북 사용자명을 저장할 속성
+      t.string :provider #: 인증서비스 제공업체명을 저장할 속성 (예, facebook, twitter 등)
+      t.string :uid      # 사용자 아이디를 저장할 속성
+      t.string :image
+      
+      #필명
+      t.string :nick
     
       ## Confirmable
       # t.string   :confirmation_token

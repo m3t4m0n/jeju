@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gem 'nokogiri'    # api parse
 gem 'rest-client'    # rest 통신 
 gem 'omniauth-facebook'    # 페이스북
@@ -8,6 +7,8 @@ gem 'acts-as-taggable-on'
 
 gem 'modernizr-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
+
+gem "fog-aws"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
