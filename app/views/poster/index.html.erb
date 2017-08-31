@@ -2,41 +2,39 @@
 	<div class="home-section" style=" text-align:center;">
 		<div class="home-section" style="text-align:center;">
 			<div class="home-section" style=" text-align:center;">
+				<!-- Head Section -->
    				<section class="page-section" id="about">
     				<div class="container relative">
             			<div class="mb-10">
           					<a href="/poster/create" class="btn btn-mod btn-mod btn-large btn-round" style="float:right; top:-20;">load post</a>
           					<h2 class="section-title font-alt align-left mb-70 mb-sm-40">
-              					POSTERS ABOUT..
+              					YOUR JEJU..
           					</h2>
         				</div>
         				<div class="row">
-        					
-			            <!-- Team item -->
-			            <% @every_post.each do |p|%>
-			            <a href="/poster/<%=p.id%>/detail">
-			            	<div class="col-sm-4 mb-xs-30 wow fadeInUp">
-			                	<div class="team-item">
-			                    	<div class="team-item-image">
-			                        	<img src="<%= p.image.url %>" /> 
-			                        	<div class="team-item-detail">
-			                            	<h4 class="font-alt normal"><%=p.host%></h4>
-			                        	</div>
-			                    	</div>
-			                    	<div class="team-item-descr font-alt">
-			                        	<div class="team-item-name">
-			                            	<%=p.host %>
-			                        	</div>
-			                        	<div class="team-item-role">
-			                            	<%= p.place %>
-			                        	</div>
-			                    	</div>
-			                    
-			                	</div>
-			            	</div>
-			            </a>
-			            <!-- End Team item -->
-			            <% end%>
+			        	<div class="container">				
+			    			<ul class="works-grid work-grid-2 clearfix font-alt hover-white hide-titles" id="work-grid">
+			            
+			                    <!-- Work Item (External Page) -->
+			                     <% @every_post.each do |p|%>
+			                    <li class="work-item mix branding design">
+			                        <a  href="/poster/<%=p.id%>/detail" class="work-ext-link">
+			                            <div class="work-img work-ext-link">
+			                                <img src="<%= p.image.url %>" /> 
+			                            </div>
+			                            
+			                            <div class="work-intro">
+			                                <h3 class="work-title"><%=p.title%></h3>
+			                                <div class="work-descr">
+			                                  <%=p.host %>
+			                                </div>
+			                            </div>
+			                        </a>
+			                    </li>
+			                    <% end%>
+			                </ul>
+						</div>
+			          
 			        	</div>
 			    	</div>
 				</section>

@@ -43,9 +43,11 @@
             <div class="section-text service_margin align-center mb-50 mb-xs-40">
                      당신의 글재주를 , 제주의 감성으로 보내드립니다.
             </div>
+             <% unless current_user%>
             <div class="align-center">
                 <a href="/users/sign_in" class="btn btn-mod  btn-medium btn-round">Login</a>
             </div>
+            <% end %>
             
           
         </div>
@@ -67,36 +69,37 @@
         <div class="row">
         	<div class="container">				
     			<ul class="works-grid work-grid-2 clearfix font-alt hover-white hide-titles" id="work-grid">
-                    <!-- Work Item (Lightbox) -->
-                    <li class="work-item mix photography">
-                        <a class="work-lightbox-link mfp-image">
-                            <div class="work-img">
-                                <%= image_tag("jeju1.png") %>
-                            </div>
-                            <div class="work-intro">
-                                <h3 class="work-title">Portrait</h3>
-                                <div class="work-descr">
-                                    Lightbox
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- End Work Item -->
-                    
+            
                     <!-- Work Item (External Page) -->
                     <li class="work-item mix branding design">
                         <a class="work-ext-link">
-                            <div class="work-img">
+                            <div class="work-img work-ext-link">
                                         <%= image_tag("jeju1.png") %>
                             </div>
                             <div class="work-intro">
-                                <h3 class="work-title">Vase 3D</h3>
+                                <h3 class="work-title">낮은곳에서</h3>
                                 <div class="work-descr">
-                                    External Page
+                                    이정하
                                 </div>
                             </div>
                         </a>
                     </li>
+                    
+                      <!-- Work Item (External Page) -->
+                    <li class="work-item mix branding design">
+                        <a class="work-ext-link">
+                            <div class="work-img work-ext-link">
+                                        <%= image_tag("jeju2.png") %>
+                            </div>
+                            <div class="work-intro">
+                                <h3 class="work-title">너를기다리는동안</h3>
+                                <div class="work-descr">
+                                    황지우
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    
                 </ul>
 			</div>
         </div>
