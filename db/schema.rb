@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 20170609063055) do
   create_table "posters", force: :cascade do |t|
     t.integer  "user_id",                                null: false
     t.string   "title"
-    t.string   "host",       default: "",               null: false
-    t.string   "place",      default: "",               null: false
-    t.text     "intro",      default: "",               null: false
+    t.string   "host",       default: "-",               null: false
+    t.string   "place",      default: "-",               null: false
+    t.text     "intro",      default: "-",               null: false
     t.string   "image",      default: "footer_logo.png", null: false
     t.datetime "start_date"
     t.datetime "end_date"
