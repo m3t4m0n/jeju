@@ -10,8 +10,8 @@ class CreatePosters < ActiveRecord::Migration
       t.text :intro, null: false, default: "-"   #상세소개
       t.string :image, null: false, default: "footer_logo.png" #이미지 
       
-      t.datetime :start_date,default: "" #시작일자
-      t.datetime :end_date ,default: "" #끝일자 
+      t.datetime :start_date,default: "2017/05/23" #시작일자
+      t.datetime :end_date ,default: "2017/05/25" #끝일자 
       
       t.integer :like, default: 0, null: false #좋아요 
       t.integer :category ,default: "1"#분류
